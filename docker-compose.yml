@@ -1,0 +1,27 @@
+services:
+  app:
+    build: .
+    environment:
+      PORT: "8080"
+      DATABASE_URL: postgresql://postgres:postgres@postgres:5432/ai_project
+      OTEL_EXPORTER_OTLP_ENDPOINT: http://otel-collector:4318
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+      - otel-collector
+
+  postgres:
+    image: pgvector/pgvector:pg17
+    environment:
+      POSTGRES_DB: ai_project
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - ./infra/schema.sql:/docker-entrypoint-initdb.d/schema.sql:ro
+
+  otel-collector:
+    image: otel/opentelemetry-collector-contrib:0.119.0
+    command: ["--config=/etc/otelcol/config.yaml"]
+    volumes:
+      - ./observability/otel-collector.yaml:/etc/otelcol/config.yaml:ro

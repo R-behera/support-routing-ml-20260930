@@ -1,0 +1,4 @@
+{"id":"support-routing-ml-2-1","input":"The API returns a timeout after deployment","label":"technical","context":"Technical failure affecting an integration.","source":"ticket-02","variant":"direct","synthetic":true}
+{"id":"support-routing-ml-3-2","input":"In an operations review, I cannot reset my password or access my account","label":"account-access","context":"Authentication and account recovery request.","source":"ticket-03","variant":"operations","synthetic":true}
+{"id":"support-routing-ml-4-3","input":"For an evaluation case, I received a suspicious login notification","label":"security","context":"Potential account compromise or unauthorized access.","source":"ticket-04","variant":"evaluation","synthetic":true}
+{"id":"support-routing-ml-6-1","input":"The SDK fails to parse the response body","label":"technical","context":"Client library behavior requires engineering review.","source":"ticket-06","variant":"direct","synthetic":true}

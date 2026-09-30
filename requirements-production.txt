@@ -1,0 +1,17 @@
+# Optional production implementation dependencies.
+# The tested baseline remains standard-library only.
+fastapi
+uvicorn[standard]
+pydantic
+httpx
+langgraph
+llama-index
+sentence-transformers
+psycopg[binary]
+pgvector
+redis
+opentelemetry-api
+opentelemetry-sdk
+opentelemetry-exporter-otlp
+prometheus-client
+mlflow

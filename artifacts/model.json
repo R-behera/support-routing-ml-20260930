@@ -1,0 +1,203 @@
+{
+  "format": "daily-project-prototype-v1",
+  "project": "support-routing-ml",
+  "title": "Applied ML Support Router",
+  "domain": "applied-machine-learning",
+  "mode": "classifier",
+  "labels": [
+    "billing",
+    "technical",
+    "account-access",
+    "security"
+  ],
+  "prototypes": {
+    "billing": {
+      "i": 3,
+      "was": 3,
+      "charged": 3,
+      "twice": 3,
+      "for": 5,
+      "the": 6,
+      "same": 3,
+      "subscription": 3,
+      "duplicate": 3,
+      "charge": 3,
+      "investigation": 3,
+      "request": 3,
+      "in": 2,
+      "an": 4,
+      "operations": 2,
+      "review": 2,
+      "evaluation": 2,
+      "case": 2,
+      "my": 3,
+      "invoice": 6,
+      "has": 3,
+      "wrong": 3,
+      "tax": 3,
+      "amount": 3,
+      "calculation": 3,
+      "or": 3,
+      "billing": 3,
+      "documentation": 3,
+      "issue": 3
+    },
+    "technical": {
+      "in": 2,
+      "an": 6,
+      "operations": 2,
+      "review": 4,
+      "the": 6,
+      "api": 2,
+      "returns": 2,
+      "a": 2,
+      "timeout": 2,
+      "after": 2,
+      "deployment": 2,
+      "technical": 2,
+      "failure": 2,
+      "affecting": 2,
+      "integration": 2,
+      "for": 2,
+      "evaluation": 2,
+      "case": 2,
+      "sdk": 2,
+      "fails": 2,
+      "to": 2,
+      "parse": 2,
+      "response": 2,
+      "body": 2,
+      "client": 2,
+      "library": 2,
+      "behavior": 2,
+      "requires": 2,
+      "engineering": 2
+    },
+    "account-access": {
+      "i": 2,
+      "cannot": 2,
+      "reset": 2,
+      "my": 4,
+      "password": 2,
+      "or": 2,
+      "access": 2,
+      "account": 4,
+      "authentication": 2,
+      "and": 2,
+      "recovery": 2,
+      "request": 2,
+      "for": 1,
+      "an": 1,
+      "evaluation": 1,
+      "case": 1
+    },
+    "security": {
+      "i": 2,
+      "received": 2,
+      "a": 2,
+      "suspicious": 2,
+      "login": 2,
+      "notification": 2,
+      "potential": 2,
+      "account": 2,
+      "compromise": 2,
+      "or": 2,
+      "unauthorized": 2,
+      "access": 2,
+      "in": 1,
+      "an": 1,
+      "operations": 1,
+      "review": 1
+    }
+  },
+  "idf": {
+    "duplicate": 2.252763,
+    "charge": 2.252763,
+    "investigation": 2.252763,
+    "request": 1.847298,
+    "technical": 2.252763,
+    "failure": 2.252763,
+    "affecting": 2.252763,
+    "an": 2.252763,
+    "integration": 2.252763,
+    "authentication": 2.252763,
+    "and": 2.252763,
+    "account": 1.847298,
+    "recovery": 2.252763,
+    "potential": 2.252763,
+    "compromise": 2.252763,
+    "or": 1.847298,
+    "unauthorized": 2.252763,
+    "access": 2.252763,
+    "invoice": 2.252763,
+    "calculation": 2.252763,
+    "billing": 2.252763,
+    "documentation": 2.252763,
+    "issue": 2.252763,
+    "client": 2.252763,
+    "library": 2.252763,
+    "behavior": 2.252763,
+    "requires": 2.252763,
+    "engineering": 2.252763,
+    "review": 2.252763
+  },
+  "documents": [
+    {
+      "id": "ticket-01",
+      "label": "billing",
+      "text": "Duplicate charge investigation request.",
+      "metadata": {
+        "synthetic": true,
+        "domain": "applied-machine-learning"
+      }
+    },
+    {
+      "id": "ticket-02",
+      "label": "technical",
+      "text": "Technical failure affecting an integration.",
+      "metadata": {
+        "synthetic": true,
+        "domain": "applied-machine-learning"
+      }
+    },
+    {
+      "id": "ticket-03",
+      "label": "account-access",
+      "text": "Authentication and account recovery request.",
+      "metadata": {
+        "synthetic": true,
+        "domain": "applied-machine-learning"
+      }
+    },
+    {
+      "id": "ticket-04",
+      "label": "security",
+      "text": "Potential account compromise or unauthorized access.",
+      "metadata": {
+        "synthetic": true,
+        "domain": "applied-machine-learning"
+      }
+    },
+    {
+      "id": "ticket-05",
+      "label": "billing",
+      "text": "Invoice calculation or billing documentation issue.",
+      "metadata": {
+        "synthetic": true,
+        "domain": "applied-machine-learning"
+      }
+    },
+    {
+      "id": "ticket-06",
+      "label": "technical",
+      "text": "Client library behavior requires engineering review.",
+      "metadata": {
+        "synthetic": true,
+        "domain": "applied-machine-learning"
+      }
+    }
+  ],
+  "graph_edges": [],
+  "confidence_threshold": 0.18,
+  "trained_on_synthetic_data": true
+}

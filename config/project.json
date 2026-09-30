@@ -1,0 +1,52 @@
+{
+  "name": "Applied ML Support Router",
+  "problem": "Support operations need reproducible routing models that expose confidence and defer uncertain cases.",
+  "domain": "applied-machine-learning",
+  "architecture": "classifier",
+  "hugging_face_tasks": [
+    "text-classification",
+    "zero-shot-classification",
+    "sentence-similarity",
+    "summarization"
+  ],
+  "recommended_stack": [
+    "FastAPI for prediction and feedback endpoints",
+    "scikit-learn or LightGBM for production baselines",
+    "Sentence Transformers for semantic fallback",
+    "MLflow for experiments and model registry",
+    "PostgreSQL for labels and human feedback",
+    "Evidently-style drift and quality monitoring"
+  ],
+  "real_world_data_sources": [
+    {
+      "name": "GitHub Issues API",
+      "url": "https://api.github.com/repos/pytorch/pytorch/issues?state=open&per_page=10",
+      "purpose": "Real technical support-style issue text"
+    },
+    {
+      "name": "Stack Exchange API",
+      "url": "https://api.stackexchange.com/2.3/questions?pagesize=10&order=desc&sort=activity&site=stackoverflow",
+      "purpose": "Real developer questions for weak-label experiments"
+    }
+  ],
+  "job_description_skills": [
+    "Applied NLP classification and confidence calibration",
+    "Human feedback loops and active learning",
+    "Model registry, drift monitoring, and retraining",
+    "Feature, label, and evaluation pipeline design",
+    "Business-aware automation and escalation metrics"
+  ],
+  "impact_targets": [
+    "Reach macro F1 >= 0.85 on a reviewed support set",
+    "Automate >= 60% of tickets at >= 0.90 precision",
+    "Route low-confidence cases to human review",
+    "Detect label and feature drift before SLA impact"
+  ],
+  "baseline_evaluation": {
+    "test_examples": 4,
+    "accuracy": 1,
+    "synthetic_evaluation": true
+  },
+  "estimated_delivery": "8-12 weeks for one engineer",
+  "generated_baseline_is_production_ready": false
+}

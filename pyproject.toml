@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "support-routing-ml-20260930"
+version = "0.1.0"
+description = "A transparent text-classification baseline for routing support requests with confidence and escalation."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "R-behera" }]
+dependencies = []
+
+[project.scripts]
+support-routing-ml-20260930 = "support_routing_ml.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
